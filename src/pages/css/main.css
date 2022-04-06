@@ -1,0 +1,28 @@
+.MuiPaper-root {
+  background-color: #fff;
+}
+
+.pro-sidebar {
+  color: #20fd55 !important;
+}
+
+.pro-sidebar > .pro-sidebar-inner {
+  background-color: #1e1e1e !important;
+}
+
+.pro-sidebar .pro-menu a {
+  color: white !important;
+}
+
+.AboutUs {
+  text-align: center;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  color: antiquewhite !important;
+  background-color: #1d1d1d !important;
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+  color: #fff !important;
+}
