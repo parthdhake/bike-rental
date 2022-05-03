@@ -1,0 +1,31 @@
+#txt {
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+  padding-block: 10px;
+}
+
+#three {
+  margin: auto;
+  font-size: 50px;
+  text-align: center;
+  padding-block: 10px;
+}
+
+#steps {
+  display: flex;
+  justify-content: center;
+}
+
+.MuiPaper-root {
+  margin: 10px;
+}
+
+.MuiCardMedia-img {
+  width: 100%;
+  height: auto;
+}
+
+.css-o69gx8-MuiCardMedia-root {
+  object-fit: fill;
+}
