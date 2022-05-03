@@ -30,7 +30,7 @@ export default function VehicleList(props) {
             name={bike.name}
             image={bike.images}
             seats={bike.seats}
-            mpg={bike.mpg}
+            kmpl={bike.kmpl}
             price={bike.price}
           />
         );

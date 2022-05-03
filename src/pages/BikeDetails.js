@@ -13,6 +13,8 @@ import rupeeSign from "../assets/icons/rupee.svg";
 import { Button } from "@mui/material";
 import { useSelector } from "react-redux";
 import { URLSearchParams } from "url";
+import { Link, Redirect } from "react-router-dom";
+
 // const congratsMsg = "Congrats you booked a fake ";
 
 // const rewardMsg = "\nCheck the console (F12)  for your reward";
@@ -62,10 +64,16 @@ export default function BikeDetails() {
       <Header pageName="Bike Details" />
       {!isLoading ? (
         <div className="SingleCarContainer">
-          <div className="SingleCarImgs box-shadow">
+          <div
+            className="SingleCarImgs box-shadow"
+            style={{ height: "450px", width: "600px" }}
+          >
             <img src={bike.images} alt={bike.name} className="SingleCarImg" />
           </div>
-          <div className="SingleCarDescription box-shadow">
+          <div
+            className="SingleCarDescription box-shadow"
+            style={{ height: "450px", width: "400px" }}
+          >
             <div className="SingleCarDescriptionH1">
               <h1>{bike.name}</h1>
             </div>
@@ -76,7 +84,7 @@ export default function BikeDetails() {
                   src={user_img}
                   alt="seats"
                 ></img>
-                <p>{bike.seats} Seats</p>
+                <p>{bike.type}</p>
               </div>
               <div className="SingleCarSpec">
                 <img
@@ -84,7 +92,7 @@ export default function BikeDetails() {
                   src={shift}
                   alt="transmission"
                 ></img>
-                <p>Auto</p>
+                <p>{bike.transmission}</p>
                 <p></p>
               </div>
               <div className="SingleCarSpec">
@@ -93,7 +101,7 @@ export default function BikeDetails() {
                   src={carImg}
                   alt="car doors"
                 ></img>
-                <p>{bike.doors} Doors</p>
+                <p>{bike.displacement}</p>
               </div>
               <div className="SingleCarSpec">
                 <img
@@ -101,10 +109,10 @@ export default function BikeDetails() {
                   src={dashboard}
                   alt="mpg dashboard"
                 ></img>
-                <p>{bike.mpg} mpg</p>
+                <p>{bike.kmpl} kmpl</p>
               </div>
             </div>
-            <div className="SingleCarFeatures">
+            {/* <div className="SingleCarFeatures">
               <div className="SingleCarFeature">
                 <CheckIcon style={checkStyle} />
                 <p>Audio Input</p>
@@ -129,7 +137,7 @@ export default function BikeDetails() {
                 <CheckIcon style={checkStyle} />
                 <p>Dual Airbags</p>
               </div>
-            </div>
+            </div> */}
             <div style={{ textAlign: "center" }}>
               {bike.availableBikes ? (
                 <p style={{ color: "greenyellow" }}>Bike Available</p>
@@ -150,7 +158,7 @@ export default function BikeDetails() {
                 disabled={!bike.availableBikes}
                 style={{
                   width: "auto",
-                  margin: "8px 0 40px 0",
+                  margin: "40px",
                 }}
                 onClick={() => bookBike(bike._id)}
               >

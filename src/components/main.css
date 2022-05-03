@@ -156,7 +156,7 @@ div .nav {
 
 .VehicleCard {
   text-align: center;
-  height: 230px;
+  height: max-content;
   display: flex;
   background: #1d1d1d;
   color: #f8f8f8;
@@ -471,11 +471,13 @@ div .nav {
 }
 .SingleCarSpecImg {
   width: 25px;
+  align-self: center;
 }
 .SingleCarSpec p {
   margin: 0;
   padding-left: 10px;
   font-size: 18px;
+  align-self: center;
 }
 .SingleCarFeatures {
   display: grid;

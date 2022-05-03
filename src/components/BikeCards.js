@@ -61,16 +61,21 @@ export default function BikeCards(props) {
           <h3 className="VehicleName">{props.name}</h3>
         </div>
         <div>
-          <img src={props.image} alt={props.name} style={{ width: "300px" }} />
+          <img
+            src={props.image}
+            alt={props.name}
+            style={{ width: "300px", height: "200px" }}
+          />
         </div>
         <div className="VehicleSpecs">
           <div className="VehicleSpecs-spec">
             <img src={user} alt="user" style={{ width: "20px" }} />
-            <p className="VehicleSpecs-p">{props.seats}</p>
+            <p className="VehicleSpecs-p">2</p>
           </div>
+
           <div className="VehicleSpecs-spec">
             <img src={dashboard} alt="dashboard" style={{ width: "20px" }} />
-            <p className="VehicleSpecs-p">{props.mpg} mpg</p>
+            <p className="VehicleSpecs-p">{props.kmpl} kmpl</p>
           </div>
           <div className="VehicleSpecs-spec">
             <img src={rupeeSign} alt="dollar sign" style={{ width: "13px" }} />
