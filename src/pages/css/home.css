@@ -17,10 +17,6 @@
   justify-content: center;
 }
 
-.MuiPaper-root {
-  margin: 10px;
-}
-
 .MuiCardMedia-img {
   width: 100%;
   height: auto;
@@ -28,4 +24,8 @@
 
 .css-o69gx8-MuiCardMedia-root {
   object-fit: fill;
+}
+
+.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+  margin: 10px;
 }

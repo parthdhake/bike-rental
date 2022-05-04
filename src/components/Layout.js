@@ -1,7 +1,4 @@
 import React from "react";
-import Home from "../pages/Home";
-import bgImage from "../assets/Simple Shiny.svg";
-import car from "../assets/car.jpeg";
 
 export default function Layout(props) {
   return (

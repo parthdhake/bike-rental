@@ -146,14 +146,14 @@ export default function Signup() {
           <div class="right">
             <div class="right-text">
               <h2>LONYX</h2>
-              <h5>A CAR RENTAL AGENCEY</h5>
+              <h5>A BIKE RENTAL AGENCEY</h5>
             </div>
-            <div class="right-inductor">
+            {/* <div class="right-inductor">
               <img
                 src="https://s3-us-west-2.amazonaws.com/lonyx-assets/lonyx-logo.png"
                 alt=""
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
